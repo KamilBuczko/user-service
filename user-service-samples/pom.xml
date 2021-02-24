@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>user-service-samples</artifactId>
+    <name>user-service-samples</name>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>com.nvt.oss</groupId>
+        <artifactId>user-service-build</artifactId>
+        <version>${revision}</version>
+        <relativePath>../user-service-build</relativePath>
+    </parent>
+
+    <modules>
+        <module>user-service-sample</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.nvt.oss</groupId>
+                <artifactId>user-service-dependencies</artifactId>
+                <version>${revision}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
